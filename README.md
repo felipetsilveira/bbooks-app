@@ -1,5 +1,5 @@
-# Olá!
-# Busquei fazer um projeto simples, focando no JS conforme solicitado
+ Olá!
+ Busquei fazer um projeto simples, focando no JS conforme solicitado
 # O layout foi feito da forma mais clean possível, já que a avaliação não levaria em conta este aspecto
 # Estou enviando um arquivo .sql com as estruturas que usei, mas é possível atrvés do app inserir os dados
 # Fiz alguns poucos comentários, já que o códio em si é simples
