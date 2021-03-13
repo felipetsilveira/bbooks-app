@@ -1,0 +1,149 @@
+:root {
+  --main-font: 'Roboto', sans-serif;
+  --main-color: #618685;
+}
+
+body {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+li {
+  margin: 1px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form > button {
+  margin: 10px auto;
+  padding: 6px;
+  width: 100px;
+
+  border-radius: 5px;
+  border: 1px solid cornflowerblue
+}
+
+i { 
+  
+  /* formatação dos ícones do fontawesome */
+  
+  color: var(--main-color);
+  font-size: 1.1em;
+}
+
+::-webkit-input-placeholder { /* Edge */
+  color: #c4b7a6
+}
+
+::placeholder {
+  color: #929292;
+}
+
+input {
+  margin: 10px auto;
+  background: #eee;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  min-width: 25rem;
+  text-align: center;
+  
+  font-size: 1.2em;
+  font-family: var(--main-font);
+}
+
+input:focus  {
+  padding: 10px; /* Aumentar um pouco o input selecionado */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header h2 {
+  margin-top: 10px;
+  color: var(--main-color);
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  background: var(--main-color);
+  width: 100%;
+  color: #fff;
+  text-align: right;
+  
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 0.8em
+}
+
+footer span {
+  margin-right: 1rem;
+}
+
+.container {
+  padding: 20px;
+
+  font-family: var(--main-font);
+}
+
+.accordion {
+    display: flex;
+    justify-content: space-between; /* Espaço entre os elementos obtido pelo flexbox*/
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    border-radius: 5px;
+    margin-top: 5px;
+    
+    font-family: var(--main-font);
+    font-size: 15px;
+    font-weight: 900;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc; 
+  }
+  
+  /* .panel abre quando o nome do livro é clicado através de uma funcao  de JS */
+
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
+
+  .panel-class {
+    display: none;
+  }
+
+  section {
+    min-height: 100vh;
+    margin-bottom: 100px;
+  }
+
+  section > ul > li {
+    padding: 10px 0;
+    text-align: right;
+  }
+
+  section > ul {
+    padding: 0;
+  }

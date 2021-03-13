@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>bBooks</title>
+</head>
+<body>
+    <div class="container">
+        <section id="books-list">
+            <header>
+                <h2>ACERVO VIRTUAL</h2>
+                <ul> 
+                    <li><i class="far fa-folder-open"></i> | <a href="#cad-books">Cadastrar Livros</a></li>
+                </ul>
+            </header>
+            <div id="books"></div>
+        </section>
+        <section id="cad-books">
+            <header>
+                <h2>CADASTRAR LIVRO</h2>
+                <ul>
+                    <li><i class="fas fa-book"></i> | <a href="#books-list">Livros Cadastrados</a></li>
+                </ul>
+            </header>
+                <form>
+                    <input type="text" id="input-isbn" placeholder="ISBN">
+                    <input type="text" id="input-title" placeholder="Título">
+                    <input type="text" id="input-subtitle" placeholder="Subtítulo">
+                    <input type="text" id="input-summary" placeholder="Resumo">
+                    <input type="text" id="input-price" placeholder="Preço">
+                    <button id="send-data">Enviar</button>
+                </form>
+        </section>
+    </div>
+    <footer>
+        <span>DESENVOLVIDO POR FELIPE SILVEIRA</span>
+    </footer>
+<script src="./index.js"></script>
+</body>
+</html>
+
+
+
