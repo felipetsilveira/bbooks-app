@@ -14,18 +14,19 @@ sendData.onclick = function() {
   const summary = document.querySelector('#input-summary').value
   const price = document.querySelector('#input-price').value
 
-  fetch('http://localhost:5000/insert', {
-    headers: {
-      'Content-type': 'application/json'
-    },
-    method: 'POST',
-    body: JSON.stringify({ isbn : isbn, title : title, subtitle : subtitle, summary : summary, price: price  })
-  })
-    .then(res => res.json())
-    .then(data => dataInsert(data['data']))
+  
+    fetch('http://localhost:5000/insert', {
+      headers: {
+        'Content-type': 'application/json'
+      },
+      method: 'POST',
+      body: JSON.stringify({ isbn : isbn, title : title, subtitle : subtitle, summary : summary, price: price  })
+    })
+      .then(res => res.json())
+      .then(data => dataInsert(data['data']))
 
-    window.location.reload
-    
+      window.location.reload()
+  
 }
 
 function dataInsert(data) {

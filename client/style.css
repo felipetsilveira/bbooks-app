@@ -54,7 +54,8 @@ input {
   padding: 5px;
   border-radius: 5px;
   border: 1px solid grey;
-  min-width: 25rem;
+  width: 50%;
+  min-width: 300px;
   text-align: center;
   
   font-size: 1.2em;
@@ -146,4 +147,13 @@ footer span {
 
   section > ul {
     padding: 0;
+  }
+
+  .alert {
+    margin: 0 auto;
+    color:#fff;
+    background: red;
+    text-align: center;
+
+    font-family: Arial, Helvetica, sans-serif;
   }
